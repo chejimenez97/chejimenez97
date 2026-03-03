@@ -6,3 +6,6 @@ charge of tasks regarding FPGA, embedded systems, radiofrequency, DSP, electroni
 
 You can contact me via email at josemarijc2010@hotmail.com 
 
+```mermaid
+  info
+```
