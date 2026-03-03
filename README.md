@@ -7,5 +7,21 @@ charge of tasks regarding FPGA, embedded systems, radiofrequency, DSP, electroni
 You can contact me via email at josemarijc2010@hotmail.com 
 
 ```mermaid
-  info
+  flowchart TD
+    A[Inicio] --> B(Inicializar sum=0.0f)
+    B --> C{i < 100?}
+    C -->|Sí| D[Calcular exp_i]
+    D --> E[sum = sum + exp_i]
+    E --> F[i = i + 1]
+    F --> C
+    
+    C -->|No| G[i = 0]
+    
+    G --> H{i < 100?}
+    H -->|Sí| I[Calcular exp_i]
+    I --> J[out_i = exp_i / sum]
+    J --> K[i = i + 1]
+    K --> H
+    
+    H -->|No| L([Fin])
 ```
